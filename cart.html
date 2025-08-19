@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillow Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>VibeRise Pillow Store</h1>
+  </header>
+
+  <main>
+    <h2>Select Your Pillow</h2>
+    <div class="products">
+      <div class="product" onclick="selectPillow('small')">
+        <img src="../Asset/Small_Pillow.png" alt="Small Pillow">
+        <p>Small Pillow</p>
+        <span>₹699</span>
+        <div class="tick" id="tick-small">✔</div>
+      </div>
+
+      <div class="product" onclick="selectPillow('big')">
+        <img src="../Asset/Big_Pillow.png" alt="Big Pillow">
+        <p>Big Pillow</p>
+        <span>₹799</span>
+        <div class="tick" id="tick-big">✔</div>
+      </div>
+
+      <div class="product" onclick="selectPillow('combo')">
+        <img src="../Asset/Combo_Offer.jpg" alt="Combo Pillow">
+        <p>Combo Offer</p>
+        <span>₹1399</span>
+        <div class="tick" id="tick-combo">✔</div>
+      </div>
+    </div>
+
+    <div class="summary">
+      <h3>Order Summary</h3>
+      <p id="summary-text">No pillow selected</p>
+      <p id="summary-price">₹0</p>
+    </div>
+  </main>
+</body>
+</html>
